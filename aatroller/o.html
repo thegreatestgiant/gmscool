@@ -1,0 +1,11 @@
+<script>
+  var id = "gndmhdcefbhlchkhipcnnbkcmicncehk";
+  chrome.runtime.sendMessage(id, { command: "lock" }, close);
+  setTimeout(function () {
+    document.documentElement.innerHTML +=
+      '<button onclick="lol()">Click this if you are stuck in fullscreen</button>';
+  }, 2000);
+  function lol() {
+    chrome.runtime.sendMessage(id, { command: "unlock" });
+  }
+</script>
